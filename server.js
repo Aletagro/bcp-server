@@ -40,7 +40,7 @@ app.get('/api/tournaments', async (req, res) => {
     })
     try {
         const response = await axios.get(
-            'https://newprod-api.bestcoastpairings.com/v1/events?limit=100&playerEvents=true',
+            'https://newprod-api.bestcoastpairings.com/v1/events?limit=100&playerEvents=true&toEvents=true',
             {
                 headers: {
                     Authorization: `Bearer ${token}`,
